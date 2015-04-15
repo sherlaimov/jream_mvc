@@ -1,0 +1,40 @@
+
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    background: #dcdcdc;
+
+}
+
+.container{
+    background: #c8c6c6;
+ ;
+
+}
+
+#main {
+    background: #fff;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%
+    /*margin: 0 auto -4em;*/
+}
+
+#header {
+    background: #91918E;
+    padding: 20px;
+}
+
+#footer {
+    background: #fff;
+    padding: 20px;
+
+}
+
+.push {
+    /*height: 4em;*/
+}
