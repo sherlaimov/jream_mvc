@@ -1,5 +1,7 @@
 #tempfile.txt
 
+.idea/
+
 *.tar
 *.tar.*
 *.zip
