@@ -34,8 +34,17 @@ foreach($this->noteList as $key => $value){
     echo '<td>' . $value['content'] . '</td>';
     echo '<td>' . $value['date'] . '</td>';
     echo '<td> <a href="' . URL . 'note/edit/' . $value['note_id'] . '" class="btn btn-warning">Edit</a></td>';
-    echo '<td> <a href="' . URL . 'note/delete/' . $value['note_id'] . '" class="btn btn-danger">Delete</a></td>';
+    echo '<td> <a href="' . URL . 'note/delete/' . $value['note_id'] . '" class="btn btn-danger delete">Delete</a></td>';
     echo '</tr>';
 }
 ?>
 </table>
+
+<script>
+    $(function(){
+        $('.delete').click(function(e){
+            var c = confirm('Are you sure you want to delete this?');
+            if(c== false) return false;
+        });
+    });
+</script>

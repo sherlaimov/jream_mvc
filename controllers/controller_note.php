@@ -10,14 +10,7 @@ class Controller_Note extends Controller
         parent::__construct();
         $this->model = $this->load_model('note');
         $this->handleLogin();
-//        $logged = Session::get('loggedIn');
-//        $role = Session::get('role');
-//
-//        if ($logged == false || $role == 'default') {
-//            Session::destroy();
-//            header('location: ' . URL .'login');
-//            exit;
-//        }
+
 
     }
 

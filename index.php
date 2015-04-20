@@ -15,4 +15,6 @@ function __autoload($class){
 //require_once('libs/session.php');
 //require_once('libs/hash.php');
 
-$app = new Routing();
+$route = new Routing();
+//$route->setControllerPath('c');
+$route->init();
